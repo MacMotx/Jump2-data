@@ -1,4 +1,4 @@
-# Jump2Digital 2022 
+# Jump_2_Digital 2022 
 
 ## Air quality classification 🌬
 
