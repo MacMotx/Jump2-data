@@ -1,5 +1,5 @@
 # Jump_2_Digital 2022 
-
+![My Remote Image](https://www.rpsgroup.com/media/2484/air-quality-1600x1000.jpg?anchor=center&mode=crop&width=1200&height=630&rnd=131915165990000000)
 ## Air quality classification 🌬
 
 ### Background 
@@ -32,35 +32,35 @@ Random forest Classifier consistently was amongst the best results. Some other A
 
 | **_Random Forest_** | precision | recall | f1-score | support |
 |---------------------|-----------|--------|----------|---------|
-| Good                | 0.9387    | 0.9087 | 0.9234   | 219     |
-| Moderate            | 0.8904    | 0.9375 | 0.9133   | 208     |
-| Toxic               | 0.8945    | 0.8768 | 0.8856   | 203     |
+| Good                | 0.9364    | 0.9406 | 0.9385   | 219     |
+| Moderate            | 0.9000    | 0.9087 | 0.9043   | 208     |
+| Toxic               | 0.8900    | 0.8768 | 0.8834   | 203     |
 |                     |           |        |          |         |
-| accuracy            |           |        | 0.9079   | 630     |
-| macro avg           | 0.9079    | 0.9077 | 0.9075   | 630     |
-| weighted avg        | 0.9085    | 0.9079 | 0.9079   | 630     |
+| accuracy            |           |        | 0.9095   | 630     |
+| macro avg           | 0.9088    | 0.9087 | 0.9087   | 630     |
+| weighted avg        | 0.9094    | 0.9095 | 0.9094   | 630     |
 
 
 | **_KNeighbors_** | precision | recall | f1-score | support |
 |------------------|-----------|--------|----------|---------|
-| Good             | 0.9398    | 0.9269 | 0.9333   | 219     |
-| Moderate         | 0.9108    | 0.9327 | 0.9216   | 208     |
-| Toxic            | 0.9104    | 0.9015 | 0.9059   | 203     |
+| Good             | 0.9444    | 0.9315 | 0.9379   | 219     |
+| Moderate         | 0.9061    | 0.9279 | 0.9169   | 208     |
+| Toxic            | 0.9154    | 0.9064 | 0.9109   | 203     |
 |                  |           |        |          |         |
-| accuracy         |           |        | 0.9206   | 630     |
-| macro avg        | 0.9204    | 0.9204 | 0.9203   | 630     |
-| weighted avg     | 0.9208    | 0.9206 | 0.9206   | 630     |
+| accuracy         |           |        | 0.9222   | 630     |
+| macro avg        | 0.9220    | 0.9219 | 0.9219   | 630     |
+| weighted avg     | 0.9224    | 0.9222 | 0.9223   | 630     |
 
 
 | **_Voting Ensemble_** | precision | recall | f1-score | support |
 |-----------------------|-----------|--------|----------|---------|
-| Good                  | 0.9263    | 0.9178 | 0.9220   | 219     |
-| Moderate              | 0.8834    | 0.9471 | 0.9142   | 208     |
-| Toxic                 | 0.9000    | 0.8424 | 0.8702   | 203     |
-|                       |           |        |          |         |
-| accuracy              |           |        | 0.9032   | 630     |
-| macro avg             | 0.9032    | 0.9024 | 0.9021   | 630     |
-| weighted avg          | 0.9037    | 0.9032 | 0.9027   | 630     |
+| Good                  | 0.9444    | 0.9315 | 0.9379   | 219     |
+| Moderate              | 0.9061    | 0.9279 | 0.9169   | 208     |
+| Toxic                 | 0.9154    | 0.9064 | 0.9109   | 203     |
+| ---                   | ---       | ---    | ---      | ---     |
+| accuracy              |           |        | 0.9222   | 630     |
+| macro avg             | 0.9220    | 0.9219 | 0.9219   | 630     |
+| weighted avg          | 0.9224    | 0.9222 | 0.9223   | 630     |
 
 
 ## License
