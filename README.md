@@ -10,9 +10,10 @@ To reach this long-term temperature goal, countries aim to peak greenhouse gas e
 That is why the European Union is allocating large amounts of resources to the development of new technologies that allow the improvement of the fight against pollution. One of these is a new type of sensor based on laser technology that allows air quality to be detected based on different sensors.
 
 
-## Problem 🥅
+## Goal 🥅
 
-The objective of the challenge will be to make a predictive model based on Random Forests that allows knowing the type of air quality based on the measurements of the sensors.
+The objective of the challenge will be to make a predictive model based on Random Forests able to correctly classify the quality of the air based on the measurements of the laser sensors.
+
 
 ## The Data 💾
 
@@ -24,44 +25,29 @@ Target: The target corresponds to the 'label' that classifies the quality of the
 - Target 1 corresponds to Moderate air quality
 - Target 2 corresponds to Dangerous air quality
 
-## Analysis
-Data exhibited near normal Distributions on all their features. Different transformations were tried separatedly on the test set (Standard Scaler, Power Transforms) just to see if It was a help for the ensemble learners but It didn't improve much of the linear models besides worsened practically all tested models.🤔 
 
-## Results 
-Random forest Classifier consistently was amongst the best results. Some other Algorithms that delivered the highest scores were the ensemble Voting Classifier and the KNeighbors Classifier. 
+## Analysis 🔍
 
-| **_Random Forest_** | precision | recall | f1-score | support |
-|---------------------|-----------|--------|----------|---------|
-| Good                | 0.9364    | 0.9406 | 0.9385   | 219     |
-| Moderate            | 0.9000    | 0.9087 | 0.9043   | 208     |
-| Toxic               | 0.8900    | 0.8768 | 0.8834   | 203     |
-|                     |           |        |          |         |
-| accuracy            |           |        | 0.9095   | 630     |
-| macro avg           | 0.9088    | 0.9087 | 0.9087   | 630     |
-| weighted avg        | 0.9094    | 0.9095 | 0.9094   | 630     |
+Data exhibited near normal Distributions on all their features.Different transformations were tried separatedly on the test set (Standard Scaler, Power Transforms) after removing highly correlated features and non informatives.
+This way we were able to see in place how models behave whith each train subset
+
+The spot-check algorithms were a mixture of Linear, nonLinear and Ensemble Algorithms
 
 
-| **_KNeighbors_** | precision | recall | f1-score | support |
-|------------------|-----------|--------|----------|---------|
-| Good             | 0.9444    | 0.9315 | 0.9379   | 219     |
-| Moderate         | 0.9061    | 0.9279 | 0.9169   | 208     |
-| Toxic            | 0.9154    | 0.9064 | 0.9109   | 203     |
-|                  |           |        |          |         |
-| accuracy         |           |        | 0.9222   | 630     |
-| macro avg        | 0.9220    | 0.9219 | 0.9219   | 630     |
-| weighted avg     | 0.9224    | 0.9222 | 0.9223   | 630     |
+## Results 💎
+
+The Voting Classifier Method obtained the best results after slightly imbalancing the target. This helped the model to discern better Toxic/Moderate labels and in turn slightly reduced their false negatives.  
 
 
-| **_Voting Ensemble_** | precision | recall | f1-score | support |
-|-----------------------|-----------|--------|----------|---------|
-| Good                  | 0.9251    | 0.9589 | 0.9417   | 219     |
-| Moderate              | 0.9155    | 0.9375 | 0.9264   | 208     |
-| Toxic                 | 0.9316    | 0.8719 | 0.9008   | 203     |
-|                       |           |        |          |         |
-| accuracy              |           |        | 0.9238   | 630     |
-| macro avg             | 0.9241    | 0.9228 | 0.9229   | 630     |
-| weighted avg          | 0.9240    | 0.9238 | 0.9234   | 630     |
+| **_Voting Classifier_** | precision | recall | f1-score | support |
+|-------------------------|-----------|--------|----------|---------|
+| Good                    | 0.9437    | 0.9178 | 0.9306   | 219     |
+| Moderate                | 0.9238    | 0.9327 | 0.9282   | 208     |
+| Toxic                   | 0.9082    | 0.9261 | 0.9171   | 203     |
+| accuracy                |           |        | **0.9254**| 630    |
+| macro avg               | 0.9252    | 0.9255 | 0.9253   | 630     |
+| weighted avg            | 0.9257    | 0.9254 | 0.9254   | 630     |
 
 
-## License
-GPL (See LICENSE document)
+## License 
+GPL (LICENSE.txt)
