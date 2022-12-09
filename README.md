@@ -36,7 +36,7 @@ The spot-check algorithms were a mixture of Linear, nonLinear and Ensemble Algor
 
 ## Results 💎
 
-The Voting Classifier Method obtained the best results after slightly imbalancing the target. This helped the model to discern better Toxic/Moderate labels and in turn slightly reduced their false negatives.  
+The Voting Classifier Method obtained the best results after slightly imbalancing the target. This helped the model to discern better Toxic/Moderate Air Quality labels and in turn slightly reduced their false negatives.  
 
 
 | **_Voting Classifier_** | precision | recall | f1-score | support |
